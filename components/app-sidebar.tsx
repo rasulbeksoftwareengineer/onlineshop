@@ -2,8 +2,8 @@
 
 import * as React from "react"
 import {
-  Command,
-  SquareTerminal,
+  Box,
+  ShoppingBag,
 } from "lucide-react"
 
 import { NavMain } from "@/components/nav-main"
@@ -21,46 +21,12 @@ import {
 const data = {
   navMain: [
     {
-      title: "Dashboard Managament",
-      url: "/dashboard",
-      icon: SquareTerminal,
+      title: "Products",
+      url: "/dashboard/products",
+      icon: Box,
       isActive: true,
-      items: [
-        {
-          title: "Navbar",
-          url: "/dashboard/navbar",
-        },
-        {
-          title: "Hero",
-          url: "/dashboard/hero",
-        },
-        {
-          title: "About us",
-          url: "/dashboard/about-us",
-        },
-        {
-          title: "Features",
-          url: "/dashboard/features",
-        },
-        {
-          title: "Testimonials",
-          url: "/dashboard/testimonials",
-        },
-        {
-          title: "FAQs",
-          url: "/dashboard/faqs",
-        },
-        {
-          title: "Contact submissions",
-          url: "/dashboard/contact-submissions",
-        },
-        {
-          title: "Footer",
-          url: "/dashboard/footer",
-        },
-      ],
-    },
-  ],
+    }
+  ]
 
 }
 
@@ -76,11 +42,11 @@ export function AppSidebar({ email, ...props }: AppSidebarProps) {
             <SidebarMenuButton size="lg" asChild>
               <a href="#">
                 <div className="flex aspect-square size-8 items-center justify-center rounded-lg bg-sidebar-primary text-sidebar-primary-foreground">
-                  <Command className="size-4" />
+                  <ShoppingBag className="size-4" />
                 </div>
                 <div className="grid flex-1 text-left text-sm leading-tight">
-                  <span className="truncate font-semibold">Learning center</span>
-                  <span className="truncate text-xs">Dashboard</span>
+                  <span className="truncate font-semibold">OnlineShop</span>
+                  <span className="truncate text-xs">Shop</span>
                 </div>
               </a>
             </SidebarMenuButton>
