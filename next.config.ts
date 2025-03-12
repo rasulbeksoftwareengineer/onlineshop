@@ -5,8 +5,12 @@ const nextConfig: NextConfig = {
     remotePatterns: [
       {
         protocol: "https",
-        hostname: "openshop.uz",
+        hostname: "openshop.fra1.cdn.digitaloceanspaces.com",
       },
+      {
+        protocol: 'https',
+        hostname: 'openshop.uz'
+      }
     ],
   },
 };
